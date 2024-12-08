@@ -1,0 +1,206 @@
+* html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+:root {
+    --primary: #ff6d00;
+    --bg: #010101;
+}
+
+.navbar {
+    background-color: var(--primary);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    min-width: 200px;
+}
+
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-item i {
+    font-size: 14px;
+}
+
+.main {
+    text-transform: capitalize;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.containerDua {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nameContainer,
+.emailContainer,
+.passwordContainer,
+.roleContainer {
+    margin-top: 20px;
+}
+
+.nameContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameContainer div {
+    text-align: left;
+}
+
+.emailContainer input,
+.passwordContainer input,
+.roleContainer input {
+    width: 431px;
+    height: 40px;
+    border: 2px solid #ad9f9f;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nameContainer input {
+    width: 200px;
+    font-weight: bold;
+    height: 40px;
+    border: 2px solid #ad9f9f;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.nameContainer,
+div,
+label,
+.emailContainer label,
+.passwordContainer label,
+.roleContainer label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.imgContainer img {
+    width: 500px;
+}
+
+.btn-Container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnSubmit button {
+    width: 100px;
+    height: 40px;
+    background-color: var(--primary);
+    cursor: pointer;
+    border-radius: 8px;
+    border: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.btnLogOut button {
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 8px;
+    border: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

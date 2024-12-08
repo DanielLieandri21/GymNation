@@ -1,0 +1,177 @@
+* html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+:root {
+    --primary: #ff6d00;
+    --bg: #010101;
+}
+
+.navbar {
+    background-color: var(--primary);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    min-width: 200px;
+}
+
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-item i {
+    font-size: 14px;
+}
+
+.logout-container {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tableData{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#carouselTable {
+    border-collapse: collapse; 
+    width: 80%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
+}
+
+#carouselTable thead, #carouselTable thead th{
+    background-color: var(--primary);
+    font-weight: bold;
+    text-align: center;
+}
+
+#carouselTable th, #carouselTable td {
+    border: 1px solid #ddd; 
+    padding: 8px;
+    text-align: left;
+}
+
+#carouselTable td img {
+    width: 300px;
+}
+
+#carouselTable th {
+    font-weight: bold;
+}
+
+.tambahCarousel{
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.tambahCarousel button {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tambahCarousel button:hover {
+    border: 2px solid #ff6d00;
+    background-color: transparent;
+    color: #ff6d00;
+    transition: 0.2s linear;
+}
+
+.delete-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #ff4d4d;
+    cursor: pointer;
+    color: white;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto; 
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%; 
+    text-align: left;
+    color: #010101;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

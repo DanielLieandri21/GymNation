@@ -1,0 +1,434 @@
+* html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #ff6d00;
+    --bg: #010101;
+}
+
+.navbar {
+    background-color: var(--primary);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    min-width: 200px;
+}
+
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-item i {
+    font-size: 14px;
+}
+
+.pilihanData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.containerData{
+    display: flex;
+    gap: 30px;
+}
+
+.cta-link button{
+    width: 180px;
+    background-color: #ff6d00;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cta-link button:hover{
+    width: 180px;
+    background-color: white;
+    color: #ff6d00;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .2s ease-in-out;
+}
+
+.tableData{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TABLE FASILITAS */
+#fasilitasTable {
+    border-collapse: collapse; 
+    width: 80%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
+}
+
+#fasilitasTable thead, #fasilitasTable thead th{
+    background-color: var(--primary);
+    font-weight: bold;
+    text-align: center;
+}
+
+#fasilitasTable th, #fasilitasTable td {
+    border: 1px solid #ddd; 
+    padding: 8px;
+    text-align: left;
+}
+
+#fasilitasTable td img {
+    width: 300px;
+}
+
+#fasilitasTable th {
+    font-weight: bold;
+}
+
+.delete-fasilitas-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #ff4d4d;
+    cursor: pointer;
+    color: white;
+}
+
+.tambahFasilitas{
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.tambahFasilitas button {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tambahFasilitas button:hover {
+    border: 2px solid #ff6d00;
+    background-color: transparent;
+    color: #ff6d00;
+    transition: 0.2s linear;
+}
+
+.delete-dataFasilitas-btn, 
+.delete-dataMakanan-btn, 
+.delete-dataKelas-btn, .delete-potongan-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #ff4d4d;
+    cursor: pointer;
+    color: white;
+}
+
+.edit-dataKelas-jumlahAnggota-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: green;
+    cursor: pointer;
+    color: white;
+}
+.edit-dataKelas-jadwal-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: green;
+    cursor: pointer;
+    color: white;
+}
+
+.jumlahAnggotaKelas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* TABLE MAKANAN SEHAT */
+#makananSehatTable {
+    border-collapse: collapse; 
+    width: 80%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
+}
+
+#makananSehatTable thead, #makananSehatTable thead th{
+    background-color: var(--primary);
+    font-weight: bold;
+    text-align: center;
+}
+
+#makananSehatTable th, #makananSehatTable td {
+    border: 1px solid #ddd; 
+    padding: 8px;
+    text-align: left;
+}
+
+#makananSehatTable td img {
+    width: 300px;
+}
+
+#makananSehatTable th {
+    font-weight: bold;
+}
+
+.delete-makanansehat-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #ff4d4d;
+    cursor: pointer;
+    color: white;
+}
+
+.tambahMakananSehat{
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.tambahMakananSehat button {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tambahMakananSehat button:hover {
+    border: 2px solid #ff6d00;
+    background-color: transparent;
+    color: #ff6d00;
+    transition: 0.2s linear;
+}
+
+/* TABLE KELAS */
+#kelasTable {
+    border-collapse: collapse; 
+    width: 80%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
+}
+
+#kelasTable thead, #kelasTable thead th{
+    background-color: var(--primary);
+    font-weight: bold;
+    text-align: center;
+}
+
+#kelasTable th, #kelasTable td {
+    border: 1px solid #ddd; 
+    padding: 8px;
+    text-align: left;
+}
+
+#kelasTable td img {
+    width: 300px;
+}
+
+#kelasTable th {
+    font-weight: bold;
+}
+
+.delete-kelas-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #ff4d4d;
+    cursor: pointer;
+    color: white;
+}
+
+.tambahKelas{
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.tambahKelas button {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tambahKelas button:hover {
+    border: 2px solid #ff6d00;
+    background-color: transparent;
+    color: #ff6d00;
+    transition: 0.2s linear;
+}
+
+/* TABLE POTONGAN HARGA */
+#potonganHargaTable {
+    border-collapse: collapse; 
+    width: 80%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
+}
+
+#potonganHargaTable thead, #potonganHargaTable thead th{
+    background-color: var(--primary);
+    font-weight: bold;
+    text-align: center;
+}
+
+#potonganHargaTable th, #potonganHargaTable td {
+    border: 1px solid #ddd; 
+    padding: 8px;
+    text-align: left;
+}
+
+#potonganHargaTable td img {
+    width: 300px;
+}
+
+#potonganHargaTable th {
+    font-weight: bold;
+}
+
+.delete-potonganharga-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #ff4d4d;
+    cursor: pointer;
+    color: white;
+}
+
+.tambahPotonganHarga{
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.tambahPotonganHarga button {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tambahPotonganHarga button:hover {
+    border: 2px solid #ff6d00;
+    background-color: transparent;
+    color: #ff6d00;
+    transition: 0.2s linear;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto; 
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%; 
+    text-align: left;
+    color: #010101;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,154 @@
+* html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+:root {
+    --primary: #ff6d00;
+    --bg: #010101;
+}
+
+.navbar {
+    background-color: var(--primary);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    min-width: 200px;
+}
+
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-item i {
+    font-size: 14px;
+}
+
+.logout-container {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logout {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.title{
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.containerStatus{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.statusGYM {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.status-circle.open {
+    background-color: green;
+}
+
+.status-circle.closed {
+    background-color: red;
+}
+
+.status-circle.undifined {
+    background-color: black;
+}
+
+.status-text {
+    font-weight: bold;
+    color: black;
+}
+
+.status-update {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    color: #010101;
+}
+
+#statusDropdown {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

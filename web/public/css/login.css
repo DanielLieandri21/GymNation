@@ -1,0 +1,176 @@
+* html,
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+}
+
+:root {
+    --primary: #ff6d00;
+    --bg: #010101;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GymnationLogo {
+    width: 400px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inputMail,
+.inputPass {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputMail label,
+.inputPass label {
+    font-size: 20px;
+}
+
+.inputMail input,
+.inputPass input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.lupaPassword a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: capitalize;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.btn button:hover {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid #ff6d00;
+    background-color: transparent;
+    color: #ff6d00;
+    transition: 0.2s linear;
+}
+
+.is-invalid {
+    border: 2px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#carouselForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailInput label {
+    font-size: 15px;
+    font-weight: bold;
+}
+.emailInput input {
+    width: 200px;
+    height: 20px;
+    border-radius: 8px;
+}
+
+.modal-content {
+    background-color: var(--primary);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: left;
+    color: #010101;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-submit button{
+    background-color: #222831;
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-submit button:hover{
+    background-color: #31363F;
+}
