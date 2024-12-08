@@ -1,17 +1,16 @@
-
 ## GymNation
-GymNation adalah aplikasi GYM yang mencakup tujuan awal kami membuat aplikasi GYM, yaitu untuk mempermudah anggota GYM mendapatkan informasi terkait layanan GYM, mempermudah proses pendaftaran dan langganan anggota GYM, memberikan informasi biaya langganan dan paket berlangganan dan menampilkan jadwal kelas GYM.
 
+GymNation adalah aplikasi GYM yang mencakup tujuan awal kami membuat aplikasi GYM, yaitu untuk mempermudah anggota GYM mendapatkan informasi terkait layanan GYM, mempermudah proses pendaftaran dan langganan anggota GYM, memberikan informasi biaya langganan dan paket berlangganan dan menampilkan jadwal kelas GYM.
 
 # Contributing
 
-
-|**Nama**| **NIM** |  
-|:-------|:-----------:|
-|Daniel Lieandri|1302220017 |
-
+| **Nama**        |  **NIM**   |
+| :-------------- | :--------: |
+| Daniel Lieandri | 1302220017 |
+| Daniel Lieandri | 1302220017 |
 
 ## Installation mobile
+
 Install gymnation depedencies with flutter
 
 ```bash
@@ -21,6 +20,7 @@ Install gymnation depedencies with flutter
 ```
 
 ## Installation web
+
 Install gymnation depedencies with laravel
 
 ```bash
@@ -30,7 +30,8 @@ Install gymnation depedencies with laravel
 ```
 
 ## Installation Backend
-Install gymnation depedencies with node 
+
+Install gymnation depedencies with node
 
 ```bash
   git clone [repository link]
