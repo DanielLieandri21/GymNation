@@ -7,7 +7,6 @@ GymNation adalah aplikasi GYM yang mencakup tujuan awal kami membuat aplikasi GY
 | **Nama**        |  **NIM**   |
 | :-------------- | :--------: |
 | Daniel Lieandri | 1302220017 |
-| Daniel Lieandri | 1302220017 |
 
 ## Installation mobile
 
